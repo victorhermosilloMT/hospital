@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+          
+        <record id="employee0" model="hospital.employee">
+          <field name="name">Dr. Mario</field>
+            <field name="lastName">Rodriguez</field>
+            <field name="phone">8762864</field>
+            <field name="age">40</field>
+        </record>
+          
+        <record id="employee1" model="hospital.employee"> 
+          <field name="name">employee 1</field> 
+        </record>
+
+    </data>
+</odoo>
