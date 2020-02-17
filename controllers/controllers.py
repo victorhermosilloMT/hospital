@@ -18,3 +18,8 @@ from odoo import http
 #         return http.request.render('hospital.object', {
 #             'object': obj
 #         })
+
+
+"""
+Esto es un comentario enorme para marcar la diferencia
+"""
