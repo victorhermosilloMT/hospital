@@ -2,6 +2,7 @@
 
 from odoo import models, fields, api
 
+
 class Employee(models.Model):
     _name = 'hospital.employee'
     _description = "Hospital Employee"
@@ -11,7 +12,10 @@ class Employee(models.Model):
     lastName = fields.Char(string="Last name:")
     phone = fields.Char(string="Phone:")
     age = fields.Integer(string="Age:")
+
     file_ids = fields.One2many('hospital.file', 'employee_id', string="Cases attending:")
+    patient_id = fields.One2many('hospital.patient', 'employee_id', string="Patients:")
+
 
 class Patient(models.Model):
     _name = 'hospital.patient'
@@ -26,6 +30,8 @@ class Patient(models.Model):
     status = fields.Boolean(default=True)
 
     files_id = fields.One2many('hospital.file', 'patients_id', ondelete='cascade', string="Cases:")
+    employee_id = fields.Many2one('hospital.employee', ondelete='set null', string="Employee in charge:", required=True)
+
 
 class File(models.Model):
     _name = 'hospital.file'

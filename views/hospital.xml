@@ -37,6 +37,16 @@
                                 </tree>
                             </field>
                         </page>
+                        <page string="Patients">
+                            <field name="patient_id">
+                                <tree>
+                                    <field name="name"/>
+                                    <field name="lastName"/>
+                                    <field name="problem"/>
+                                    <field name="status"/>
+                                </tree>
+                            </field>
+                        </page>
                     </notebook>
                 </sheet>
             </form>
