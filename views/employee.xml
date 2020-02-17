@@ -53,22 +53,6 @@
         </field>
     </record>
 
-    <record model="ir.actions.act_window" id="patient_list_action">
-            <field name="name">Patient</field>
-            <field name="res_model">hospital.patient</field>
-            <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
-            <field name="arch" type="xml">
-                <form string="Patients">
-                    <sheet>
-                        <group>
-                            <field name="name"/>
-                        </group>
-                    </sheet>
-                </form>
-            </field>
-    </record>
-
     <record model="ir.actions.act_window" id="files_list_action">
             <field name="name">Files</field>
             <field name="res_model">hospital.file</field>
