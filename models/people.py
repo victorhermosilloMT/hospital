@@ -27,11 +27,14 @@ class Patient(models.Model):
     phone = fields.Char(string="Phone:")
     age = fields.Integer(string="Age:")
     problem = fields.Text(string="Sintoms:", required=True)
-    status = fields.Boolean(default=True)
+    status = fields.Selection([('active', 'Active'), ('inactive', 'Inactive')], required=True)
 
     files_id = fields.One2many('hospital.file', 'patients_id', ondelete='cascade', string="Cases:")
     employee_id = fields.Many2one('hospital.employee', ondelete='set null', string="Employee in charge:", required=True)
 
+    _defaults = {
+        'status': 'active'
+    }
 
 class File(models.Model):
     _name = 'hospital.file'
