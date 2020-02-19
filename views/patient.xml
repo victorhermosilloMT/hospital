@@ -1,35 +1,44 @@
 <odoo>
     <record model="ir.actions.act_window" id="patient_list_action">
-            <field name="name">Patient</field>
-            <field name="res_model">hospital.patient</field>
-            <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
-            <field name="arch" type="xml">
-                <form string="Patients">
-                    <sheet>
-                        <group>
-                            <field name="name"/>
-                        </group>
-                    </sheet>
-                </form>
-            </field>
+        <field name="name">Patients</field>
+        <field name="res_model">hospital.patient</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No patients created yet.
+            </p>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="patient_tree_view">
+        <field name="name">patient.tree</field>
+        <field name="model">hospital.patient</field>
+        <field name="arch" type="xml">
+            <tree string="Patient Tree">
+                <field name="name"/>
+                <field name="status"/>
+            </tree>
+        </field>
     </record>
 
     <record model="ir.ui.view" id="patient_form_view">
-        <field name="name">patient.form</field>
+        <field name="name">hospital.patient.form</field>
         <field name="model">hospital.patient</field>
         <field name="arch" type="xml">
             <form string="Patient Information">
                 <sheet>
                     <group>
-                        <field name="name"/>
-                        <field name="lastName"/>
-                        <field name="phone"/>
-                    </group>
-                    <group>
-                        <field name="age"/>
-                        <field name="problem"/>
-                        <field name="status"/>
+                        <group>
+                            <field name="name"/>
+                            <field name="lastName"/>
+                            <field name="phone"/>
+                        </group>
+                        <group>
+                            <field name="age"/>
+                            <field name="problem"/>
+                            <field name="status"/>
+                        </group>
                     </group>
                     <notebook>
                         <page string="Files">
@@ -56,4 +65,7 @@
             </form>
         </field>
     </record>
+
+    <menuitem id="hospital_menu_patient" name="Patients" parent="hospital_menu_people" action="patient_list_action"/>
+
 </odoo>

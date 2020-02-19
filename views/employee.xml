@@ -4,15 +4,23 @@
             <field name="res_model">hospital.employee</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="arch" type="xml">
-                <form string="Employees">
-                    <sheet>
-                        <group>
-                            <field name="name"/>
-                        </group>
-                    </sheet>
-                </form>
-            </field>
+            <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No employees created yet.
+            </p>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="employee_tree_view">
+        <field name="name">employee.tree</field>
+        <field name="model">hospital.employee</field>
+        <field name="arch" type="xml">
+            <tree string="Employee Tree">
+                <field name="name"/>
+                <field name="phone"/>
+                <field name="file_ids"/>
+            </tree>
+        </field>
     </record>
 
     <record model="ir.ui.view" id="employee_form_view">
@@ -53,29 +61,10 @@
         </field>
     </record>
 
-    <record model="ir.actions.act_window" id="files_list_action">
-            <field name="name">Files</field>
-            <field name="res_model">hospital.file</field>
-            <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
-            <field name="arch" type="xml">
-                <form string="Files">
-                    <sheet>
-                        <group>
-                            <field name="name"/>
-                        </group>
-                    </sheet>
-                </form>
-            </field>
-    </record>
-
     <menuitem id="main_hospital_menu" name="Hospital"/>
 
     <menuitem id="hospital_menu_people" name="People" parent="main_hospital_menu"/>
-    <menuitem id="hospital_menu_files" name="Files" parent="main_hospital_menu" action="files_list_action"/>
-
 
     <menuitem id="hospital_menu_employee" name="Employees" parent="hospital_menu_people" action="employee_list_action"/>
-    <menuitem id="hospital_menu_patient" name="Patients" parent="hospital_menu_people" action="patient_list_action"/>
 
 </odoo>

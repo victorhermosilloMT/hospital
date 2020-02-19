@@ -1,0 +1,27 @@
+<odoo>
+    <record model="ir.actions.act_window" id="files_list_action">
+            <field name="name">Files</field>
+            <field name="res_model">hospital.file</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No patients created yet.
+            </p>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="file_tree_view">
+        <field name="name">file.tree</field>
+        <field name="model">hospital.file</field>
+        <field name="arch" type="xml">
+            <tree string="File Tree">
+                <field name="name"/>
+                <field name="employee_id"/>
+                <field name="patients_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <menuitem id="hospital_menu_files" name="Files" parent="main_hospital_menu" action="files_list_action"/>
+</odoo>
