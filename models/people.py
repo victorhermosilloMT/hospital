@@ -8,6 +8,7 @@ class Employee(models.Model):
     _description = "Hospital Employee"
 
     id = fields.Integer(string="Id")
+    image = fields.Binary(string="Image", attachment=True, store=True)
     name = fields.Char(string="Name:", required=True)
     lastName = fields.Char(string="Last name:")
     phone = fields.Char(string="Phone:")
