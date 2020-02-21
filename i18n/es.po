@@ -1,0 +1,242 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* hospital
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-21 18:47+0000\n"
+"PO-Revision-Date: 2020-02-21 18:47+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hospital
+#: selection:hospital.patient,status:0
+msgid "Active"
+msgstr "Activo"
+
+#. module: hospital
+#: model:ir.model.fields,field_description:hospital.field_hospital_employee__age
+#: model:ir.model.fields,field_description:hospital.field_hospital_patient__age
+msgid "Age:"
+msgstr "Edad"
+
+#. module: hospital
+#: model:ir.model.fields,field_description:hospital.field_hospital_employee__file_ids
+msgid "Cases attending:"
+msgstr "Casos atendiendo"
+
+#. module: hospital
+#: model:ir.model.fields,field_description:hospital.field_hospital_patient__files_id
+msgid "Cases:"
+msgstr "Casos"
+
+#. module: hospital
+#: model:ir.model.fields,field_description:hospital.field_hospital_employee__create_uid
+#: model:ir.model.fields,field_description:hospital.field_hospital_file__create_uid
+#: model:ir.model.fields,field_description:hospital.field_hospital_patient__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: hospital
+#: model:ir.model.fields,field_description:hospital.field_hospital_employee__create_date
+#: model:ir.model.fields,field_description:hospital.field_hospital_file__create_date
+#: model:ir.model.fields,field_description:hospital.field_hospital_patient__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: hospital
+#: model:ir.model.fields,field_description:hospital.field_hospital_employee__display_name
+#: model:ir.model.fields,field_description:hospital.field_hospital_file__display_name
+#: model:ir.model.fields,field_description:hospital.field_hospital_patient__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: hospital
+#: model_terms:ir.ui.view,arch_db:hospital.patient_form_view
+msgid "Doctors in charge"
+msgstr "Doctor a cargo"
+
+#. module: hospital
+#: model:ir.actions.act_window,name:hospital.employee_list_action
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: hospital
+#: model_terms:ir.ui.view,arch_db:hospital.employee_form_view
+msgid "Employee Information"
+msgstr "Información del empleado"
+
+#. module: hospital
+#: model_terms:ir.ui.view,arch_db:hospital.employee_tree_view
+msgid "Employee Tree"
+msgstr "Arbol de empleados"
+
+#. module: hospital
+#: model:ir.model.fields,field_description:hospital.field_hospital_file__employee_id
+#: model:ir.model.fields,field_description:hospital.field_hospital_patient__employee_id
+msgid "Employee in charge:"
+msgstr "Empleado a cargo"
+
+#. module: hospital
+#: model:ir.ui.menu,name:hospital.hospital_menu_employee
+msgid "Employees"
+msgstr "Empleados"
+
+#. module: hospital
+#: model_terms:ir.ui.view,arch_db:hospital.file_tree_view
+msgid "File Tree"
+msgstr "Arbol de archivos"
+
+#. module: hospital
+#: model:ir.model.fields,field_description:hospital.field_hospital_file__info
+msgid "File info:"
+msgstr "Información del archivo"
+
+#. module: hospital
+#: model:ir.model.fields,field_description:hospital.field_hospital_file__name
+msgid "File name:"
+msgstr "Nombre del archivo"
+
+#. module: hospital
+#: model:ir.actions.act_window,name:hospital.files_list_action
+#: model:ir.ui.menu,name:hospital.hospital_menu_files
+#: model_terms:ir.ui.view,arch_db:hospital.employee_form_view
+#: model_terms:ir.ui.view,arch_db:hospital.patient_form_view
+msgid "Files"
+msgstr "Archivos"
+
+#. module: hospital
+#: model:ir.ui.menu,name:hospital.main_hospital_menu
+msgid "Hospital"
+msgstr "Hospital"
+
+#. module: hospital
+#: model:ir.model,name:hospital.model_hospital_employee
+msgid "Hospital Employee"
+msgstr "Empleado del hospital"
+
+#. module: hospital
+#: model:ir.model,name:hospital.model_hospital_file
+msgid "Hospital Files"
+msgstr "Archivos del hospital"
+
+#. module: hospital
+#: model:ir.model,name:hospital.model_hospital_patient
+msgid "Hospital Patient"
+msgstr "Paciente del hospital"
+
+#. module: hospital
+#: model:ir.model.fields,field_description:hospital.field_hospital_employee__id
+#: model:ir.model.fields,field_description:hospital.field_hospital_file__id
+#: model:ir.model.fields,field_description:hospital.field_hospital_patient__id
+msgid "ID"
+msgstr "ID"
+
+#. module: hospital
+#: model:ir.model.fields,field_description:hospital.field_hospital_employee__image
+msgid "Image"
+msgstr "Imagen"
+
+#. module: hospital
+#: selection:hospital.patient,status:0
+msgid "Inactive"
+msgstr "Inactivo"
+
+#. module: hospital
+#: model:ir.model.fields,field_description:hospital.field_hospital_employee____last_update
+#: model:ir.model.fields,field_description:hospital.field_hospital_file____last_update
+#: model:ir.model.fields,field_description:hospital.field_hospital_patient____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: hospital
+#: model:ir.model.fields,field_description:hospital.field_hospital_employee__write_uid
+#: model:ir.model.fields,field_description:hospital.field_hospital_file__write_uid
+#: model:ir.model.fields,field_description:hospital.field_hospital_patient__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: hospital
+#: model:ir.model.fields,field_description:hospital.field_hospital_employee__write_date
+#: model:ir.model.fields,field_description:hospital.field_hospital_file__write_date
+#: model:ir.model.fields,field_description:hospital.field_hospital_patient__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: hospital
+#: model:ir.model.fields,field_description:hospital.field_hospital_employee__lastName
+#: model:ir.model.fields,field_description:hospital.field_hospital_patient__lastName
+msgid "Last name:"
+msgstr "Apellido:"
+
+#. module: hospital
+#: model:ir.model.fields,field_description:hospital.field_hospital_employee__name
+#: model:ir.model.fields,field_description:hospital.field_hospital_patient__name
+msgid "Name:"
+msgstr "Nombre"
+
+#. module: hospital
+#: model_terms:ir.actions.act_window,help:hospital.employee_list_action
+msgid "No employees created yet."
+msgstr "No se han creado empleados"
+
+#. module: hospital
+#: model_terms:ir.actions.act_window,help:hospital.files_list_action
+#: model_terms:ir.actions.act_window,help:hospital.patient_list_action
+msgid "No patients created yet."
+msgstr "NO se han creado pacientes"
+
+#. module: hospital
+#: model_terms:ir.ui.view,arch_db:hospital.patient_form_view
+msgid "Patient Information"
+msgstr "Información del paciente"
+
+#. module: hospital
+#: model_terms:ir.ui.view,arch_db:hospital.patient_tree_view
+msgid "Patient Tree"
+msgstr "Arbol de pacientes"
+
+#. module: hospital
+#: model:ir.model.fields,field_description:hospital.field_hospital_file__patients_id
+msgid "Patient attending:"
+msgstr "Pacientes atendiendo:"
+
+#. module: hospital
+#: model:ir.actions.act_window,name:hospital.patient_list_action
+#: model:ir.ui.menu,name:hospital.hospital_menu_patient
+#: model_terms:ir.ui.view,arch_db:hospital.employee_form_view
+msgid "Patients"
+msgstr "Pacientes"
+
+#. module: hospital
+#: model:ir.model.fields,field_description:hospital.field_hospital_employee__patient_id
+msgid "Patients:"
+msgstr "Pacientes:"
+
+#. module: hospital
+#: model:ir.ui.menu,name:hospital.hospital_menu_people
+msgid "People"
+msgstr "Personas"
+
+#. module: hospital
+#: model:ir.model.fields,field_description:hospital.field_hospital_employee__phone
+#: model:ir.model.fields,field_description:hospital.field_hospital_patient__phone
+msgid "Phone:"
+msgstr "Telefono:"
+
+#. module: hospital
+#: model:ir.model.fields,field_description:hospital.field_hospital_patient__problem
+msgid "Sintoms:"
+msgstr "Sintomas:"
+
+#. module: hospital
+#: model:ir.model.fields,field_description:hospital.field_hospital_patient__status
+msgid "Status"
+msgstr "Estado"
+

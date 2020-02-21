@@ -19,6 +19,7 @@
                 <field name="name"/>
                 <field name="phone"/>
                 <field name="file_ids"/>
+                <field name="patient_id"/>
             </tree>
         </field>
     </record>
